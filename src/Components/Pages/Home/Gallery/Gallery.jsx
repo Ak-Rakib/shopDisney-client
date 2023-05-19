@@ -14,8 +14,10 @@ const Gallery = () => {
       });
 
   return (
-    <div>
-        <div className="grid md:grid-cols-3 gap-5 md:mt-20 md:mb-20">
+    <div className=" md:mt-20 md:mb-20">
+        <h1 className="text-center"><span className="font-bold text-3xl text-indigo-800">shopDisney</span><br /><span className="font-bold text-slate-500">Gallery</span></h1>
+
+        <div className="grid md:grid-cols-3 gap-5">
             {
                 users.map(doll => <ShowingGallery
                     key={doll._id}
