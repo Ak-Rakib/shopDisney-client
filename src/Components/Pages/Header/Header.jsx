@@ -114,7 +114,7 @@ const Header = () => {
             <div>
               <Link
                 to="/login"
-                className="btn btn-outline"
+                className="btn btn-primary"
               >
                 Login
               </Link>

@@ -27,83 +27,88 @@ const Register = () => {
       });
   };
   return (
-    <div className="flex justify-center items-center w-screen h-screen bg-img mt-20 mb-20">
-      <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-        <form onSubmit={signUpHandler} className="card-body">
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Name</span>
-            </label>
-            <input
-              type="name"
-              placeholder="name"
-              className="input input-bordered"
-            />
-            <label className="label">
-              <p href="#" className="label-text-alt">
-                We'll never share your Name.
-              </p>
-            </label>
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">photoURL</span>
-            </label>
-            <input
-              type="Photo"
-              name="photoURL"
-              placeholder="photoURL"
-              className="input input-bordered"
-            />
-            <label className="label">
-              <p href="#" className="label-text-alt">
-                We'll never share your photo.
-              </p>
-            </label>
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Email</span>
-            </label>
-            <input
-              type="email"
-              name="email"
-              placeholder="email"
-              className="input input-bordered"
-            />
-            <label className="label">
-              <p href="#" className="label-text-alt">
-                We'll never share your email with anyone else.
-              </p>
-            </label>
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Password</span>
-            </label>
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              className="input input-bordered"
-            />
-            <label className="label">
-              {error ? (
-                <p href="#" className="label-text-alt link link-hover text-red-600">
-                  {error}
+    <div className="bg-img py-20">
+      <div className="flex justify-center items-center w-screen h-screen">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <form onSubmit={signUpHandler} className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="name"
+                placeholder="name"
+                className="input input-bordered"
+              />
+              <label className="label">
+                <p href="#" className="label-text-alt">
+                  We'll never share your Name.
                 </p>
-              ) : null}
-            </label>
-          </div>
-          <p className="">
-            Have an account? please do <Link to="/login">LogIn</Link>{" "}
-          </p>
-          <br />
-          <br />
-          <div className="form-control mt-6">
-            <button className="btn btn-outline">Register</button>
-          </div>
-        </form>
+              </label>
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">photoURL</span>
+              </label>
+              <input
+                type="Photo"
+                name="photoURL"
+                placeholder="photoURL"
+                className="input input-bordered"
+              />
+              <label className="label">
+                <p href="#" className="label-text-alt">
+                  We'll never share your photo.
+                </p>
+              </label>
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                className="input input-bordered"
+              />
+              <label className="label">
+                <p href="#" className="label-text-alt">
+                  We'll never share your email with anyone else.
+                </p>
+              </label>
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
+              </label>
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                className="input input-bordered"
+              />
+              <label className="label">
+                {error ? (
+                  <p
+                    href="#"
+                    className="label-text-alt link link-hover text-red-600"
+                  >
+                    {error}
+                  </p>
+                ) : null}
+              </label>
+            </div>
+            <p className="">
+              Have an account? please do <Link to="/login">LogIn</Link>{" "}
+            </p>
+            <br />
+            <br />
+            <div className="form-control mt-6">
+              <button className="btn btn-outline">Register</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

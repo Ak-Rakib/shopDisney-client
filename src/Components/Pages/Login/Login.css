@@ -1,4 +1,5 @@
 .bg-img {
-    background: url('');
+    background: url("../../../assets/bg-photo/mainCover.png");
     background-size: cover;
+    overflow: hidden;
 }
