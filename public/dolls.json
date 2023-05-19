@@ -1,0 +1,56 @@
+[
+  {
+    "picture": "https://i.ibb.co/WBr9j3n/doll1.jpg",
+    "name": "Barbie",
+    "price": 19.99,
+    "rating": 4.5
+  },
+  {
+    "picture": "https://i.ibb.co/YcRBknM/doll2.jpg",
+    "name": "Ken",
+    "price": 17.99,
+    "rating": 4.2
+  },
+  {
+    "picture": "https://i.ibb.co/cXJj9VZ/doll3.jpg",
+    "name": "Baby Alive",
+    "price": 24.99,
+    "rating": 4.7
+  },
+  {
+    "picture": "https://i.ibb.co/3mZhRw9/doll4.jpg",
+    "name": "American Girl",
+    "price": 49.99,
+    "rating": 4.9
+  },
+  {
+    "picture": "https://i.ibb.co/qDTC3B6/doll5.jpg",
+    "name": "Monster High",
+    "price": 14.99,
+    "rating": 4.1
+  },
+  {
+    "picture": "https://i.ibb.co/jgKWHfb/doll6.jpg",
+    "name": "Cabbage Patch Kids",
+    "price": 29.99,
+    "rating": 4.6
+  },
+  {
+    "picture": "https://i.ibb.co/9VMZL9s/doll7.jpg",
+    "name": "Bratz",
+    "price": 12.99,
+    "rating": 4.3
+  },
+  {
+    "picture": "https://i.ibb.co/YLSvPd6/doll8.png",
+    "name": "Disney Princess",
+    "price": 22.99,
+    "rating": 4.8
+  },
+  {
+    "picture": "https://i.ibb.co/qkLCYGG/doll9.jpg",
+    "name": "L.O.L. Surprise!",
+    "price": 9.99,
+    "rating": 4.4
+  }
+]
