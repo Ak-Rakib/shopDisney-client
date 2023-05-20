@@ -54,22 +54,29 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
-              <li>
-                <Link>
-                  <a>Home</a>
-                </Link>
+          <div className="navbar-center hidden lg:flex justify-around">
+            <ul className="menu-horizontal px-1">
+              <li className="me-2">
+              <Link
+                className="btn bg-green-300 border-0 rounded-lg"
+              >
+                Home
+              </Link>
+              </li>
+              <li className="me-2">
+              <Link
+                className="btn bg-green-300 border-0"
+              >
+                 Toys
+              </Link>
               </li>
               <li>
-                <Link>
-                  <a>All Toys</a>
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog">
-                  <a>Blogs</a>
-                </Link>
+              <Link
+                className="btn bg-green-300 border-0 rounded-lg"
+                to="/blog"
+              >
+                Blogs
+              </Link>
               </li>
             </ul>
           </div>
@@ -114,7 +121,7 @@ const Header = () => {
             <div>
               <Link
                 to="/login"
-                className="btn btn-primary"
+                className="btn bg-green-300 border-0"
               >
                 Login
               </Link>

@@ -5,7 +5,7 @@ const Blog = () => {
     <React.Fragment>
       <div className="mb-20 md:p-14 lg:p-14">
         <div style={{ width: "100%" }}>
-          <div className="p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
+          <div className="bg-green-300 p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
             <h3 className="font-bold text-2xl">
               What is an access token and refresh token? How do they work and
               where should we store them on the client-side?
@@ -68,7 +68,7 @@ const Blog = () => {
               managing token storage.
             </p>
           </div>
-          <div className="p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
+          <div className="bg-green-300 p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
             <h3 className="font-bold text-2xl">
               Compare SQL and NoSQL databases?
             </h3>
@@ -115,7 +115,7 @@ const Blog = () => {
               agility are essential.
             </p>
           </div>
-          <div className=" p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
+          <div className="bg-green-300 p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
             <h3 className="font-bold text-2xl">
               What is express js? What is Nest JS (google it)?
             </h3>
@@ -150,7 +150,7 @@ const Blog = () => {
               and maintainability over time.
             </p>
           </div>
-          <div className=" p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
+          <div className="bg-green-300 p-5 rounded mb-10 shadow-lg transform hover:scale-110 transition duration-300">
             <h3 className="font-bold text-2xl">
               What is MongoDB aggregate and how does it work (google it)?{" "}
             </h3>

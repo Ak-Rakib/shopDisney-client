@@ -10,7 +10,7 @@ const ExtraSecondSection = () => {
         <span className="font-bold text-slate-500">Progress</span>
       </h1>
       <div className="flex justify-center">
-        <div className="stats shadow">
+        <div className="stats shadow bg-green-300 border-0">
           <div className="stat">
             <div className="stat-figure text-primary">
               <svg

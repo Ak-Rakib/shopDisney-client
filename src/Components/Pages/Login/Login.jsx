@@ -94,11 +94,11 @@ const Login = () => {
             <br />
             <br />
             <div className="form-control mt-6">
-              <button className="btn btn-outline mb-8">Login</button>
+              <button className="btn bg-green-300 border-0 mb-8">Login</button>
               <button
                 type="submit"
                 onClick={googleHandler}
-                className="btn btn-outline mb-4"
+                className="btn bg-green-300 border-0 mb-4"
               >
                 Continue With Google
               </button>

@@ -23,7 +23,7 @@ const ShowingCategory = ({ doll }) => {
           <div className="card-actions flex justify-between items-center">
             <div className="badge badge-outline">{"Rating: "+rating}</div>
             <Link to={`/singleToys/${_id}`}>
-              <div onClick={notify} className="btn btn-primary">View Details</div>
+              <div onClick={notify} className="btn bg-green-300 border-0">View Details</div>
               <ToastContainer />
             </Link>
           </div>

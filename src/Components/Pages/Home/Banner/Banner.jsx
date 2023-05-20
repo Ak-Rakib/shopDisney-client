@@ -17,7 +17,7 @@ const Banner = () => {
             <p className="mb-5">
               Unlock the Magic of Disney at our Online Shop!
             </p>
-            <button className="btn btn-primary">Let's Shopping</button>
+            <button className="btn bg-green-300 border-0">Let's Shopping</button>
           </div>
         </div>
       </div>

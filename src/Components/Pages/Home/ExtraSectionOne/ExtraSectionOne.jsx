@@ -3,8 +3,8 @@ import banner2 from "../../../../assets/banner/banner2.png";
 
 const ExtraSectionOne = () => {
   return (
-    <div>
-      <div className="hero min-h-screen">
+    <div className="mt-20">
+      <div className="bg-green-300 border-0 hero min-h-screen rounded-lg">
         <div className="hero-content flex-col lg:flex-row">
           <img src={banner2} className="max-w-sm rounded-lg shadow-2xl" />
           <div>
@@ -17,7 +17,7 @@ const ExtraSectionOne = () => {
               magic, and find the perfect doll that will bring endless joy and
               wonder to your world.
             </p>
-            <button className="btn btn-primary">Hit meee!</button>
+            <button className="btn bg-green-300 border-0">Hit meee!</button>
           </div>
         </div>
       </div>
