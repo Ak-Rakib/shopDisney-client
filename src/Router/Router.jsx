@@ -6,6 +6,7 @@ import Login from "../Components/Pages/Login/Login";
 import Register from "../Components/Pages/Register/Register";
 import SingleToys from "../Components/Pages/SingleToys/SingleToys";
 import PrivateRoute from "../Components/Pages/PrivateRoute/PrivateRoute";
+import Blog from "../Components/Pages/Blog/Blog";
 
 
 
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
             {
                 path: "/singleToys/:id",
                 element: <PrivateRoute><SingleToys></SingleToys></PrivateRoute>
+            },
+            {
+                path: "/blog",
+                element: <Blog></Blog>
             }
         ]
     }
