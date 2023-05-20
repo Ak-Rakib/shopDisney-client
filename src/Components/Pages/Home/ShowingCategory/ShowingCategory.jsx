@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// import { AuthContext } from "../../../../AuthProvider/AuthProvider";
 
 const ShowingCategory = ({ doll }) => {
+    // const {user} = useContext(AuthContext);
   const { _id, picture, name, price, rating } = doll;
+  const notify = () => toast("You have to login first");
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -17,8 +22,9 @@ const ShowingCategory = ({ doll }) => {
           <p>{'$'+price}</p>
           <div className="card-actions flex justify-between items-center">
             <div className="badge badge-outline">{"Rating: "+rating}</div>
-            <Link>
-              <div className="btn btn-primary">View Details</div>
+            <Link to={`/singleToys/${_id}`}>
+              <div onClick={notify} className="btn btn-primary">View Details</div>
+              <ToastContainer />
             </Link>
           </div>
         </div>

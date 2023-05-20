@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ShowingGallery from "../showingGallery/showingGallery";
 
 const Gallery = () => {
   const [users, setUsers] = useState([]);
 
-  fetch("http://localhost:5000/dolls")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      setUsers(data);
-    });
-
+  useEffect(() => {
+    fetch("http://localhost:5000/dolls")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setUsers(data);
+      });
+  }, []);
+  
   return (
     <div className=" mt-20 mb-20">
       <h1 className="text-center">

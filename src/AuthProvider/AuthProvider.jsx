@@ -14,7 +14,7 @@ const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
 
 
@@ -51,6 +51,9 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       setLoading(false);
     });
+
+
+    // stop observing while unmounting
     return () => {
       unsubscribe();
     };
@@ -58,9 +61,9 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = {
     user,
+    loading,
     manuallyCreateUser,
     signIn,
-    loading,
     loginWithGoogle,
     logOut
   };

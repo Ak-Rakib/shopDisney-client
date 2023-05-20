@@ -2,21 +2,25 @@ import React, { useContext, useState } from "react";
 import "./Login.css";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 import { GoogleAuthProvider } from "firebase/auth";
-import { Link, useLocation, useNavigation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  // useTitle('login')
   const { loginWithGoogle, signIn } = useContext(AuthContext);
   const [error, setError] = useState("");
 
   const googleProvider = new GoogleAuthProvider();
-  const navigate = useNavigation();
+  const navigate = useNavigate();
   const location = useLocation();
-  const from = location.state?.form.pathname || "/";
+  // console.log(location);
+  const from = location.state?.from?.pathname || "/";
+  // console.log(from);
 
   const googleHandler = () => {
     loginWithGoogle(googleProvider).then((result) => {
       const user = result.user;
       console.log(user);
+      navigate(from, { replace: true });
       setError("");
     });
   };
@@ -32,9 +36,8 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        navigate(from, { replace: true });
-        setError("");
         form.reset();
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error);
