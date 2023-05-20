@@ -16,7 +16,7 @@ const ShowingCategory = ({ doll }) => {
           </h2>
           <p>{'$'+price}</p>
           <div className="card-actions flex justify-between items-center">
-            <div className="badge badge-outline">{rating}</div>
+            <div className="badge badge-outline">{"Rating: "+rating}</div>
             <Link>
               <div className="btn btn-primary">View Details</div>
             </Link>
