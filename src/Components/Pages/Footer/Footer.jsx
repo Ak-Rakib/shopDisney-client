@@ -17,6 +17,7 @@ const Footer = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
+                href="https://twitter.com/RakibHossa72904"
                 viewBox="0 0 24 24"
                 className="fill-current"
               >
@@ -28,6 +29,7 @@ const Footer = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
+                href="https://www.youtube.com/channel/UCVsJspPIxG8tiFD0F--noaA"
                 viewBox="0 0 24 24"
                 className="fill-current"
               >
@@ -39,6 +41,7 @@ const Footer = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
+                href="https://www.facebook.com/profile.php?id=100075643414510"
                 viewBox="0 0 24 24"
                 className="fill-current"
               >
@@ -48,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+          <p>Copyright © 2023 - All right reserved by shopDisney Ltd</p>
         </div>
       </footer>
     </div>
