@@ -69,7 +69,7 @@ const ShowingMyToys = ({ data, users, setUsers }) => {
       <td>{rating}</td>
       <td>{"$" + price}</td>
       <td>
-        <Link className="btn bg-green-300 border-0">
+        <Link to={`/updateToys/${_id}`} className="btn bg-green-300 border-0">
           Edit
         </Link>
         </td>
