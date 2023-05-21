@@ -43,7 +43,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="/allToys">
                   <a>All Toys</a>
                 </Link>
               </li>
@@ -66,6 +66,7 @@ const Header = () => {
               <li className="me-2">
               <Link
                 className="btn bg-green-300 border-0"
+                to="/allToys"
               >
                  Toys
               </Link>

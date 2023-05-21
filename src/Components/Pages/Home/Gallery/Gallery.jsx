@@ -17,7 +17,7 @@ const Gallery = () => {
   return (
     <div className=" mt-20 mb-20">
       <h1 className="text-center mb-10">
-        <span className="font-bold text-3xl text-indigo-800">shopDisney</span>
+        <span className="font-bold text-3xl text-green-300">shopDisney</span>
         <br />
         <span className="font-bold text-slate-500">Gallery</span>
       </h1>

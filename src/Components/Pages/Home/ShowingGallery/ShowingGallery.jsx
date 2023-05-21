@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ShowingGallery = ({ doll }) => {
-  const { picture } = doll;
+  const { picture, _id } = doll;
   return (
     <div className="">
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -13,7 +14,11 @@ const ShowingGallery = ({ doll }) => {
           />
         </figure>
         <div className="card-body items-center text-center">
-          {/* <h2 className="card-title">{name}</h2> */}
+          <Link to={`/toys/${_id}`}>
+            <button className="btn bg-green-300 border-0">
+              Add
+            </button>
+          </Link>
         </div>
       </div>
     </div>

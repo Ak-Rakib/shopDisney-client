@@ -6,7 +6,7 @@ import ShowingCategoryDataUsingTabs from './ShowingCategoryDataUsingTabs/Showing
 import ExtraSecondSection from './ExtraSecondSection/ExtraSecondSection';
 
 const Home = () => {
-  // useTitle('login')
+  // useTitle('Home')
     return (
         <div>
           <Banner></Banner> 

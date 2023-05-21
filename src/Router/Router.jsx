@@ -7,6 +7,8 @@ import Register from "../Components/Pages/Register/Register";
 import SingleToys from "../Components/Pages/SingleToys/SingleToys";
 import PrivateRoute from "../Components/Pages/PrivateRoute/PrivateRoute";
 import Blog from "../Components/Pages/Blog/Blog";
+import Toys from "../Components/Pages/Toys/Toys";
+import AllToys from "../Components/Pages/AllToys/AllToys";
 
 
 
@@ -37,6 +39,15 @@ export const router = createBrowserRouter([
             {
                 path: "/blog",
                 element: <Blog></Blog>
+            },
+            {
+                path: "/toys/:id",
+                element: <Toys></Toys>,
+            },
+            {
+                path: "/allToys",
+                element: <AllToys></AllToys>,
+                loader: () => fetch("http://localhost:5000/userCollection")
             }
         ]
     }
