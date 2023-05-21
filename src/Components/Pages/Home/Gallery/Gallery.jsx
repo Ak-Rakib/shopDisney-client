@@ -5,7 +5,7 @@ const Gallery = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/dolls")
+    fetch("https://shopdisney-server-production.up.railway.app/dolls")
       .then((response) => {
         return response.json();
       })

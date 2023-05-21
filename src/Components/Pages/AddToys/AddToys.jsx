@@ -34,7 +34,7 @@ const AddToys = () => {
     };
     console.log(formData);
 
-    fetch("http://localhost:5000/addCollection", {
+    fetch("https://shopdisney-server-production.up.railway.app/addCollection", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -12,6 +12,7 @@ import AllToys from "../Components/Pages/AllToys/AllToys";
 import AddToys from "../Components/Pages/AddToys/AddToys";
 import MyToys from "../Components/Pages/MyToys/MyToys";
 import UpdateMyToys from "../Components/Pages/MyToys/UpdateMyToys/UpdateMyToys";
+import DetailsAllData from "../Components/Pages/ShowingAllData/DetailsAllData/DetailsAllData";
 
 
 
@@ -38,7 +39,7 @@ export const router = createBrowserRouter([
             {
                 path: "/singleToys/:id",
                 element: <PrivateRoute><SingleToys></SingleToys></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/dolls/${params.id}`)
+                loader: ({params}) => fetch(`https://shopdisney-server-production.up.railway.app/dolls/${params.id}`)
             },
             {
                 path: "/blog",
@@ -51,7 +52,7 @@ export const router = createBrowserRouter([
             {
                 path: "/allToys",
                 element: <AllToys></AllToys>,
-                loader: () => fetch("http://localhost:5000/userCollection")
+                loader: () => fetch("https://shopdisney-server-production.up.railway.app/userCollection")
             },
             {
                 path: "/addToys",
@@ -59,12 +60,16 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/myToys",
-                element: <MyToys></MyToys>
+                element: <PrivateRoute><MyToys></MyToys></PrivateRoute>
             },
             {
                 path: "/updateToys/:id",
-                element: <UpdateMyToys></UpdateMyToys>,
-                loader: ({params}) => fetch(`http://localhost:5000/addCollection/${params.id}`)
+                element: <PrivateRoute><UpdateMyToys></UpdateMyToys></PrivateRoute>,
+                loader: ({params}) => fetch(`https://shopdisney-server-production.up.railway.app/addCollection/${params.id}`)
+            },
+            {
+                path: "/details",
+                element: <PrivateRoute><DetailsAllData></DetailsAllData></PrivateRoute>
             }
         ]
     }

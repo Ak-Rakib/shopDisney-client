@@ -45,7 +45,7 @@ const UpdateMyToys = () => {
     };
     console.log(dollUpdateData);
 
-    fetch(`http://localhost:5000/addCollection/${_id}`, {
+    fetch(`https://shopdisney-server-production.up.railway.app/addCollection/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

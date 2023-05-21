@@ -30,7 +30,7 @@ const ShowingMyToys = ({ data, users, setUsers }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
         if(result.isConfirmed) {
-            fetch(`http://localhost:5000/addCollection/${_id}`, {
+            fetch(`https://shopdisney-server-production.up.railway.app/addCollection/${_id}`, {
                 method: "DELETE"
               })
                 .then(res => res.json())

@@ -12,7 +12,7 @@ const ShowingAllData = ({ data, serialNumber }) => {
       <td>{quantity}</td>
       <td>{price}</td>
       <td>
-        <Link className="btn bg-green-300 border-0">View Details</Link>
+        <Link to="/details" className="btn bg-green-300 border-0">View Details</Link>
       </td>
     </tr>
   );

@@ -10,7 +10,7 @@ const MyToys = () => {
   console.log(users);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/addCollection?email=${user?.email}`)
+    fetch(`https://shopdisney-server-production.up.railway.app/addCollection?email=${user?.email}`)
       .then((response) => {
         return response.json();
       })

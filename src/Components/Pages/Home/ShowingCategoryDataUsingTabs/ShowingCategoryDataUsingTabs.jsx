@@ -7,7 +7,7 @@ const ShowingCategoryDataUsingTabs = () => {
   const [activeTab, setActiveTab] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/dolls/${activeTab}`)
+    fetch(`https://shopdisney-server-production.up.railway.app/dolls/${activeTab}`)
       .then((response) => {
         return response.json();
       })

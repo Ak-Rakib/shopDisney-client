@@ -26,7 +26,7 @@ const Toys = () => {
       };
       console.log(userOrder);
   
-      fetch('http://localhost:5000/userCollection', {
+      fetch('https://shopdisney-server-production.up.railway.app/userCollection', {
           method: "POST",
           headers: {
               "content-type" : "application/json"
