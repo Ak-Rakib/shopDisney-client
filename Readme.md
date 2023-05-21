@@ -3,3 +3,4 @@
 * This website have navbar and footer. navbar and footer available for all pages except error page
 * This site have login,register page and also google authentication provider
 * This site have My Toys, Add Toys and details page, those page are private.
+* https://646a4ead6ec56d2722b2726c--magenta-selkie-ec64d3.netlify.app/
