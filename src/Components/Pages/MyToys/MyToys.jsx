@@ -2,7 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import ShowingMyToys from "./ShowingMyToys/ShowingMyToys";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
+
 const MyToys = () => {
+  
     const  {user} = useContext(AuthContext);
   const [users, setUsers] = useState([]);
   console.log(users);
@@ -48,6 +50,8 @@ const MyToys = () => {
                 users?.map(data => <ShowingMyToys
                     key={data._id}
                     data = {data}
+                    users = {users}
+                    setUsers = {setUsers}
                 ></ShowingMyToys>)
             }
            

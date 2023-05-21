@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useTitle from "../../../../Hooks/useTitle";
+import Swal from "sweetalert2";
 
-const ShowingMyToys = ({ data }) => {
+const ShowingMyToys = ({ data, users, setUsers }) => {
+  useTitle("My-Toys");
   const {
     _id,
     name,
@@ -14,6 +17,36 @@ const ShowingMyToys = ({ data }) => {
     photoURL,
     details,
   } = data;
+
+  const deleteHandler = (_id) => {
+    console.log(_id);
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+        if(result.isConfirmed) {
+            fetch(`http://localhost:5000/addCollection/${_id}`, {
+                method: "DELETE"
+              })
+                .then(res => res.json())
+                .then((data) => {
+                    console.log(data);
+                  if (data.deletedCount > 0) {
+                    Swal.fire("Deleted!", "Your file has been deleted.", "success");
+                  }
+                });
+        }
+
+        const remaining = users.filter(doll => doll._id !== _id);
+        setUsers(remaining);
+    });
+  };
+
   return (
     <tr>
       <td>
@@ -41,7 +74,7 @@ const ShowingMyToys = ({ data }) => {
         </Link>
         </td>
       <td>
-        <Link className="btn bg-green-300 border-0">
+        <Link onClick={() => deleteHandler(_id)} className="btn bg-green-300 border-0">
           Delete
         </Link>
         </td>
