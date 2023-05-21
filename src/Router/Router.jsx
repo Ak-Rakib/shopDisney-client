@@ -9,6 +9,7 @@ import PrivateRoute from "../Components/Pages/PrivateRoute/PrivateRoute";
 import Blog from "../Components/Pages/Blog/Blog";
 import Toys from "../Components/Pages/Toys/Toys";
 import AllToys from "../Components/Pages/AllToys/AllToys";
+import AddToys from "../Components/Pages/AddToys/AddToys";
 
 
 
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
                 path: "/allToys",
                 element: <AllToys></AllToys>,
                 loader: () => fetch("http://localhost:5000/userCollection")
+            },
+            {
+                path: "/addToys",
+                element: <AddToys></AddToys>
             }
         ]
     }

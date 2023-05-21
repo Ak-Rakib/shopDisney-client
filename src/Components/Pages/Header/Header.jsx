@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import logo from "../../../assets/logo/logo.png";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
+import optionalPhoto from "../../../assets/Gallery/doll5.jpeg"
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -90,7 +91,12 @@ const Header = () => {
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  {
+                    user?.photoURL ?
+                    <img src={user?.photoURL} />
+                    :
+                    <img src={optionalPhoto} />
+                  }
                 </div>
               </label>
               <ul
@@ -109,7 +115,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link>
+                  <Link to="/addToys">
                     <a>Add A Toys</a>
                   </Link>
                 </li>
