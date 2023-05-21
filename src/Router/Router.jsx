@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
             {
                 path: "/singleToys/:id",
                 element: <PrivateRoute><SingleToys></SingleToys></PrivateRoute>,
-                loader: ({params}) => fetch(``)
+                loader: ({params}) => fetch(`http://localhost:5000/dolls/${params.id}`)
             },
             {
                 path: "/blog",

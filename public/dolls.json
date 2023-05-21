@@ -4,62 +4,80 @@
     "name": "Barbie",
     "price": 19.99,
     "rating": 4.5,
-    "text": "fDoll"
+    "text": "fDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/YcRBknM/doll2.jpg",
     "name": "Ken",
     "price": 17.99,
     "rating": 4.2,
-    "text": "fDoll"
+    "text": "fDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/cXJj9VZ/doll3.jpg",
     "name": "Baby Alive",
     "price": 24.99,
     "rating": 4.7,
-    "text": "fDoll"
+    "text": "fDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/3mZhRw9/doll4.jpg",
     "name": "American Girl",
     "price": 49.99,
     "rating": 4.9,
-    "text": "aDoll"
+    "text": "aDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/qDTC3B6/doll5.jpg",
     "name": "Monster High",
     "price": 14.99,
     "rating": 4.1,
-    "text": "aDoll"
+    "text": "aDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/jgKWHfb/doll6.jpg",
     "name": "Cabbage Patch Kids",
     "price": 29.99,
     "rating": 4.6,
-    "text": "aDoll"
+    "text": "aDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/9VMZL9s/doll7.jpg",
     "name": "Bratz",
     "price": 12.99,
     "rating": 4.3,
-    "text": "dDoll"
+    "text": "dDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/YLSvPd6/doll8.png",
     "name": "Disney Princess",
     "price": 22.99,
     "rating": 4.8,
-    "text": "dDoll"
+    "text": "dDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   },
   {
     "picture": "https://i.ibb.co/qkLCYGG/doll9.jpg",
     "name": "L.O.L. Surprise!",
     "price": 9.99,
     "rating": 4.4,
-    "text": "dDoll"
+    "text": "dDoll",
+    "quantity": "5",
+    "description": "Colorful, interactive, and full of joy, this toy brings endless fun and sparks the imagination of children everywhere."
   }
 ]
