@@ -110,7 +110,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <Link>
+                  <Link to="/myToys">
                     <a>My Toys</a>
                   </Link>
                 </li>
