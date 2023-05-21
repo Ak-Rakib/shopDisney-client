@@ -3,9 +3,10 @@ import "./Login.css";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 import { GoogleAuthProvider } from "firebase/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import useTitle from "../../../Hooks/useTitle";
 
 const Login = () => {
-  // useTitle('login')
+  useTitle("Login");
   const { loginWithGoogle, signIn } = useContext(AuthContext);
   const [error, setError] = useState("");
 

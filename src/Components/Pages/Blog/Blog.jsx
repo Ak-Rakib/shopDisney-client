@@ -1,6 +1,8 @@
 import React from "react";
+import useTitle from "../../../Hooks/useTitle";
 
 const Blog = () => {
+  useTitle("Blogs");
   return (
     <React.Fragment>
       <div className="mb-20 md:p-14 lg:p-14">

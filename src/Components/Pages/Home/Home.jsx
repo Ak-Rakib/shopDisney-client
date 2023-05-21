@@ -4,9 +4,10 @@ import Gallery from './Gallery/Gallery';
 import ExtraSectionOne from './ExtraSectionOne/ExtraSectionOne';
 import ShowingCategoryDataUsingTabs from './ShowingCategoryDataUsingTabs/ShowingCategoryDataUsingTabs';
 import ExtraSecondSection from './ExtraSecondSection/ExtraSecondSection';
+import useTitle from '../../../Hooks/useTitle';
 
 const Home = () => {
-  // useTitle('Home')
+  useTitle('Home')
     return (
         <div>
           <Banner></Banner> 
